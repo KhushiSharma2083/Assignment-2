@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.example {
+        position: relative;
+        padding: 0;
+        width: 1835px;
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+      }
+      .content {
+        opacity: 0;
+        font-size: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: black;
+        background-color: rgba(200, 200, 200, 0.5);
+        width: 1835px;
+        height: 800px;
+        -webkit-transition: all 400ms ease-out;
+        -moz-transition: all 400ms ease-out;
+        -o-transition: all 400ms ease-out;
+        -ms-transition: all 400ms ease-out;
+        transition: all 400ms ease-out;
+        text-align: center;
+      }
+      .example .content:hover {
+        opacity: 2;
+      }
+      .example .content .text {
+        height: 0;
+        opacity: 1;
+        transition-delay: 0s;
+        transition-duration: 0.4s;
+      }
+      .example .content:hover .text {
+        opacity: 1;
+        transform: translateY(250px);
+        -webkit-transform: translateY(250px);
+      }
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.image-container:hover{
+}
+.abc
+{
+text-align: right;
+
+  color: #f2f2f2;
+  margin-right: 15px;
+
+}
+.example{
+margin-left:30px;
+margin-right:30px;
+margin-top:20px;
+margin-bottom:20px;
+}
+  .footer {
+  
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 90%;
+   background-color: #333;
+   color: #333;
+   text-align: center;
+   
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+@keyframes multiple-image-crossfade {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" >Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+   <p class="abc" href="#Sign in" >Sign in</p>
+</div>
+<div class="example"> 
+<img id="cf4a"src="https://free4kwallpapers.com/uploads/originals/2020/07/18/taj-mahal-agra-india-wallpaper.jpg" alt="Taj" height="800px" width="1835px">
+<div class="content">
+        <div class="text">Place to visit in India</div>
+</div>
+<table  >
+<tr>
+<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    
+      <img src="https://ak.picdn.net/shutterstock/videos/4097719/thumb/1.jpg" alt="dog" style="width:290px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Delhi</h1> 
+	  <p>The Red Fort</p>
+      <p>Delhi, India’s capital territory, is a massive metropolitan area in the country’s north.</p> 
+      
+    </div>
+  </div>
+</div>
+</td>
+<td style="color:white">000<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    
+      <img src="https://i1.wp.com/theorchardgreens.com/wp-content/uploads/2020/03/Things-to-do-in-Manali.jpg" alt="dog" style="width:280px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Himachal Pradesh</h1> 
+      <p>Manali</p> 
+      <p>Himachal Pradesh is a northern Indian state in the Himalayas. It's home to scenic mountain towns and resorts such as Dalhousie.</p>
+    </div>
+  </div>
+</div>
+</td><td style="color:white">00<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    
+      <img src="https://seoimgak.mmtcdn.com/blog/sites/default/files/images/allepey.jpg" alt="dog" style="width:280px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Kerla</h1> 
+      <p>Kochi</p> 
+      <p>It's known for its palm-lined beaches and backwaters, a network of canals</p>
+    </div>
+  </div>
+</div>
+</td>
+<td style="color:white">00<td>
+<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    
+      <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-mumbai.jpg" alt="dog" style="width:280px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Mumbai</h1> 
+      <p>The Gateway of India</p> 
+      <p>Want to see a more cosmopolitan side of India? Head to the energetic, coastal city of Mumbai—home to ultra-wealthy entrepreneurs and the hottest Bollywood actors.</p>
+    </div>
+  </div>
+</div>
+</td>
+<td style="color:white">00<td>
+<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    
+      <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-rajasthan.jpg" alt="dog" style="width:280px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1> Rajasthan</h1> 
+	   <p>Gadi Sagar Temple</p>
+      <p>Translated to "Land of Kings," Rajasthan brims with remnants of the kings and queens of past centuries</p> 
+     
+    </div>
+  </div>
+</div>
+</td>
+<td style="color:white">00<td>
+<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    
+      <img src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-amritsar.jpg" alt="dog" style="width:280px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Amritsar</h1> 
+      <p>The Golden Temple</p> 
+      <p>Amritsar, the "Jewel of Punjab," has made its claim to fame with its remarkable Golden Temple.</p>
+    </div>
+  </div>
+</div>
+</td>
+</table>
+
+<div class="footer">
+  <p></p>
+  <br>
+</div>
+
+
+</body>
+</html>
